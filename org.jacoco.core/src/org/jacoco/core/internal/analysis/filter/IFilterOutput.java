@@ -30,4 +30,8 @@ public interface IFilterOutput {
 	 */
 	void ignore(AbstractInsnNode fromInclusive, AbstractInsnNode toInclusive);
 
+	void ignoreJumpTarget(AbstractInsnNode instruction);
+
+	void remapJump(AbstractInsnNode original, AbstractInsnNode remapped);
+
 }
